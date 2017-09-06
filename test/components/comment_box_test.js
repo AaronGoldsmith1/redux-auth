@@ -4,11 +4,12 @@ import CommentBox from '../../src/components/comment_box';
 
 
 describe('CommentBox', () => {
+  let component;
   beforeEach(() => {
-    const component = renderComponent(CommentBox);
+    component = renderComponent(CommentBox);
   })
   it('has the correct class', () => {
-    expect(component.to.have.class('comment-box'))
+    expect(component).to.have.class('comment-box')
   })
   it('has a text area', () => {
     expect(component.find('textarea')).to.exist;
