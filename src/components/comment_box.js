@@ -4,7 +4,7 @@ export default class CommentBox extends Component {
   render() {
     return (
       <div>
-        <textarea />
+        <textarea className="comment-box"/>
         <button>Submit Comment</button>
       </div>
     )
