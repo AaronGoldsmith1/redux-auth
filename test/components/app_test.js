@@ -3,6 +3,7 @@ import App from '../../src/components/app';
 
 describe('App', () => {
   let component;
+
   beforeEach(() => {
     component = renderComponent('App')
   })
@@ -15,4 +16,9 @@ describe('App', () => {
     const component = renderComponent(App);
     expect(component).to.contain('Redux Auth Boilerplate')
   })
+
+  it('shows a comment list', () => {
+    expect(component.find('.comment-list')).to.exist;
+
+  });
 })

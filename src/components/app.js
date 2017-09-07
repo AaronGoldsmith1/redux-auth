@@ -4,7 +4,9 @@ import CommentBox from './comment_box';
 export default class App extends Component {
   render() {
     return (
-      <div>Redux Auth Boilerplate</div>
+      <div>Redux Auth Boilerplate
+        <CommentBox />
+      </div>
       );
   }
 }
